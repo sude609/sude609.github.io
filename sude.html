@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sude Naz Baş | Dönem Ödevi Projesi</title>
+    <style>
+        /* Modern ve Temiz Tasarım Ayarları */
+        :root {
+            --primary-color: #2563eb; /* Şık okul mavisi */
+            --secondary-color: #1e3a8a;
+            --text-color: #334155;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            line-height: 1.7;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        /* Kurumsal Üst Banner */
+        header {
+            background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 5px solid #60a5fa;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        header p {
+            margin: 10px 0 0 0;
+            font-size: 1.2rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        /* Okul Bilgisi Şeridi */
+        .info-bar {
+            background-color: #e2e8f0;
+            text-align: center;
+            padding: 10px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--secondary-color);
+        }
+
+        /* İçerik Alanı */
+        main {
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Şık Bölüm Kartları */
+        section {
+            background: var(--card-bg);
+            padding: 35px;
+            margin-bottom: 30px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e2e8f0;
+        }
+
+        h2 {
+            color: var(--secondary-color);
+            margin-top: 0;
+            font-size: 1.6rem;
+            border-bottom: 3px solid #3b82f6;
+            padding-bottom: 8px;
+            display: inline-block;
+        }
+
+        /* Proje Ödev Adımları / Maddeler */
+        .project-steps {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .project-steps { grid-template-columns: 1fr; }
+        }
+
+        .step-card {
+            background: #f1f5f9;
+            padding: 20px;
+            border-radius: 12px;
+            border-top: 4px solid var(--primary-color);
+        }
+
+        .step-card h3 {
+            margin: 0 0 10px 0;
+            color: var(--secondary-color);
+        }
+
+        /* Tablo Tasarımı (Ödev takvimi veya notlar için) */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        th {
+            background-color: #f1f5f9;
+            color: var(--secondary-color);
+            font-weight: 600;
+        }
+
+        /* Alt Bilgi */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 0.9rem;
+            color: #64748b;
+            background: #0f172a;
+            color: #94a3b8;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Üst Kısım -->
+    <header>
+        <h1>Sude Naz Baş</h1>
+        <p>Bilgisayar Bilimi Ders Projesi</p>
+    </header>
+
+    <!-- Okul ve Künye Bilgisi -->
+    <div class="info-bar">
+        🏫 Okul: kırac bistmtal &nbsp;|&nbsp; 📋 Sınıf: 10-A &nbsp;|&nbsp; 🆔 Numara: 337
+    </div>
+
+    <!-- Ana İçerik -->
+    <main>
+        <!-- Proje Hakkında -->
+        <section>
+            <h2>Proje Amacı</h2>
+            <p>Bu web sitesi, Bilişim Teknolojileri ve Yazılım dersi dönem ödevi kapsamında temel HTML5 ve CSS3 standartları kullanılarak geliştirilmiştir. Projenin amacı, modern web arayüz tasarımlarının mantığını anlamak ve uygulanabilir bir portfolyo oluşturmaktır.</p>
+        </section>
+
+        <!-- Çalışma Planı (Görsel Kartlar) -->
+        <section>
+            <h2>Ödev Çalışma Adımları</h2>
+            <div class="project-steps">
+                <div class="step-card">
+                    <h3>1. Araştırma ve Planlama</h3>
+                    <p>Sitenin konusu belirlendi ve internetteki modern tasarım trendleri incelendi.</p>
+                </div>
+                <div class="step-card">
+                    <h3>2. Kodlama & Kod Düzeni</h3>
+                    <p>HTML ile sayfa düzeni kuruldu, CSS ile renkler ve grid sistemleri entegre edildi.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proje Takvimi (Tablo Bölümü) -->
+        <section>
+            <h2>Proje Süreç Takvimi</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Aşama</th>
+                        <th>Yapılan İşlem</th>
+                        <th>Durum</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Hafta 1</td>
+                        <td>Konu seçimi ve kaynak taraması</td>
+                        <td>✅ Tamamlandı</td>
+                    </tr>
+                    <tr>
+                        <td>Hafta 2</td>
+                        <td>Arayüz tasarımı ve kodlama</td>
+                        <td>✅ Tamamlandı</td>
+                    </tr>
+                    <tr>
+                        <td>Hafta 3</td>
+                        <td>Testler ve Sunum hazırlığı</td>
+                        <td>⏳ Devam Ediyor</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- Alt Bilgi -->
+    <footer>
+        <p>Bu proje Sude Naz Baş tarafından okul ödevi olarak hazırlanmıştır. &copy; 2026</p>
+    </footer>
+
+</body>
+</html>
